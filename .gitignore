@@ -1,24 +1,49 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+# Dependencies
+node_modules/
+.pnpm-store/
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
-# dotenv environment variable files
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+
+# Env files
 .env
 .env.development
 .env.test
 .env.production
+.env.*
+!.env.example
 
-# temp directory
+# Build outputs
+build/
+dist/
+out/
+coverage/
+.cache/
+.tmp/
+tmp/
 .temp
-.tmp
+
+# Framework-specific
+.next/
+.vercel/
+.turbo/
+.angular/
+.svelte-kit/
+.storybook-out/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+Thumbs.db

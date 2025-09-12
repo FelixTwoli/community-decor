@@ -11,9 +11,22 @@ import { ReviewsModule } from './modules/reviews/reviews.module';
 import { ReportsModule } from './modules/reports/reports.module';
 import { AiModule } from './modules/ai/ai.module';
 import { PaymentsModule } from './modules/payments/payments.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
-  imports: [UsersModule, PostsModule, CategoriesModule, CommentsModule, SearchModule, NotificationsModule, ReviewsModule, ReportsModule, AiModule, PaymentsModule],
+  imports: [
+    UsersModule,
+    PostsModule,
+    CategoriesModule,
+    CommentsModule,
+    SearchModule,
+    NotificationsModule,
+    ReviewsModule,
+    ReportsModule,
+    AiModule,
+    PaymentsModule,
+    AuthModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

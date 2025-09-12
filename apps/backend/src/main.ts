@@ -18,6 +18,7 @@ async function bootstrap() {
     .setDescription('API documentation for the Local Community backend')
     .setVersion('v1')
     .addServer('/v1')
+    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
   // Serve Swagger UI at /v1/docs
@@ -26,7 +27,8 @@ async function bootstrap() {
   });
 
   await app.listen(3001);
+
   console.log(` Backend running on http://localhost:3001`);
   console.log(` Swagger UI available at http://localhost:3001/v1/docs`);
 }
-bootstrap();
+void bootstrap();
